@@ -5,6 +5,7 @@ STRATEGY
 
  1. Compute Net Balance
    For every transaction [A, B, X]:
+
 balance[B] += X   (B receives)
 balance[A] -= X   (A pays)
 People with balance = 0 need no further action.
