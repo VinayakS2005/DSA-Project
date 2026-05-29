@@ -1,5 +1,6 @@
 # DSA-Project
 DSA project on minimizing cash flow
+
 STRATEGY
 
  1. Compute Net Balance
