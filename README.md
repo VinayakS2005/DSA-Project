@@ -5,15 +5,15 @@ STRATEGY
 
  1. Compute Net Balance
    For every transaction [A, B, X]:
-    balance[B] += X   (B receives)
-    balance[A] -= X   (A pays)
-    People with balance = 0 need no further action.
+balance[B] += X   (B receives)
+balance[A] -= X   (A pays)
+People with balance = 0 need no further action.
  
-  2. Split & Sort
+  3. Split & Sort
     debtors   — people with balance < 0, sorted by |balance| descending
     creditors — people with balance > 0, sorted by balance descending
  
-   3. Greedy Two-Pointer Matching
+   4. Greedy Two-Pointer Matching
    While both lists are non-empty:
    amount = min(|debtors.top()|, creditors.top())
     emit transaction: debtor pays creditor 'amount'
